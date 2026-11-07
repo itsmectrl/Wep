@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy — Weechy</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><circle cx='12' cy='12' r='10' fill='%23E50914'/><circle cx='12' cy='12' r='4' fill='white'/></svg>" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Tilt+Warp&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/index.css" />
+    <style>
+      .legal-container {
+        max-width: 900px;
+        margin: 60px auto 100px;
+        padding: 0 24px;
+        line-height: 1.8;
+      }
+      .legal-container h1 {
+        font-family: var(--font-heading);
+        font-size: 48px;
+        color: #fff;
+        margin-bottom: 24px;
+      }
+      .legal-container h2 {
+        font-family: var(--font-heading);
+        font-size: 26px;
+        color: #fff;
+        margin-top: 40px;
+        margin-bottom: 16px;
+      }
+      .legal-container p {
+        color: var(--weechy-text-muted);
+        font-size: 16px;
+        margin-bottom: 16px;
+      }
+      .legal-container ul {
+        margin-left: 24px;
+        margin-bottom: 16px;
+        color: var(--weechy-text-muted);
+      }
+      .legal-container li {
+        margin-bottom: 8px;
+      }
+      .badge-privacy {
+        display: inline-block;
+        background: rgba(0, 202, 146, 0.15);
+        color: #00ca92;
+        border: 1px solid rgba(0, 202, 146, 0.3);
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="Header_header__qBw1J">
+      <a class="Header_brand__W9fbJ" href="/">
+        <div class="Header_brandLogo">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" stroke="white" strokeWidth="2" />
+            <circle cx="12" cy="12" r="4" fill="white" />
+          </svg>
+        </div>
+        <span>Weechy</span>
+      </a>
+      <div class="Header_desktopLinks__rBDxp">
+        <a class="btn-weechy-primary" href="https://github.com/itsmectrl/weechy-releases/releases/tag/new-version-4.1">Download APK</a>
+      </div>
+    </header>
+
+    <div class="legal-container">
+      <div class="badge-privacy">100% OFFLINE & PRIVATE</div>
+      <h1>Privacy Policy</h1>
+      <p>Last updated: November 2026</p>
+
+      <h2>1. Fundamental Privacy Philosophy</h2>
+      <p>
+        At <strong>Weechy</strong> (developed by <strong>itsmectrl</strong>), we believe your music listening habits and personal media files belong entirely to you. Weechy is designed with a strict zero-telemetry, offline-first privacy architecture.
+      </p>
+
+      <h2>2. Information We Do NOT Collect</h2>
+      <p>Weechy does not collect, record, transmit, or monetize:</p>
+      <ul>
+        <li>No user accounts, email addresses, passwords, or telephone numbers.</li>
+        <li>No playback logs, listening history, or song statistics.</li>
+        <li>No device identifiers (IMEI, MAC address, advertising ID).</li>
+        <li>No GPS location coordinates or network tracking data.</li>
+        <li>No advertising analytics or behavioral profiling scripts.</li>
+      </ul>
+
+      <h2>3. Device Permissions and Usage</h2>
+      <p>To function as a music player on Android, Weechy requests the following explicit system permissions:</p>
+      <ul>
+        <li><strong>READ_MEDIA_AUDIO / READ_EXTERNAL_STORAGE:</strong> Required solely to index audio files stored in your local storage so you can browse songs, albums, and playlists.</li>
+        <li><strong>FOREGROUND_SERVICE & FOREGROUND_SERVICE_MEDIA_PLAYBACK:</strong> Allows the playback audio service to continue playing audio when the screen is turned off or when switching apps.</li>
+        <li><strong>POST_NOTIFICATIONS:</strong> Required on Android 13+ to display the system playback notification controls on your lockscreen and status bar.</li>
+      </ul>
+
+      <h2>4. External Services & Lyrics</h2>
+      <p>
+        When you choose to fetch missing synchronized lyrics, Weechy queries the public community API at <code>https://lrclib.net</code> with only the track name and artist name. No user credentials, IP logs, or device details are attached to these requests. Lyrics are cached locally on your device storage in Room SQLite.
+      </p>
+
+      <h2>5. Updates & Backup</h2>
+      <p>
+        Weechy checks for new application releases via public GitHub repository releases (<code>itsmectrl/weechy-releases</code>). Backup files created with the "Export Backup" action remain on your local filesystem under your direct custody.
+      </p>
+
+      <h2>6. Contact Developer</h2>
+      <p>
+        For inquiries regarding our privacy commitments, contact <a href="mailto:support@weechy.com" style="color: #E50914;">support@weechy.com</a>.
+      </p>
+    </div>
+
+    <footer class="Footer_footer__9S97q">
+      <div class="Footer_bottom__o_GvS" style="max-width: 900px; margin: 0 auto; padding-top: 0; border: none;">
+        <p style="color: var(--weechy-text-muted); font-size: 14px;">Copyright © 2026 itsmectrl — Weechy. All rights reserved.</p>
+        <div style="display: flex; gap: 16px;">
+          <a href="/termsOfService.html" style="color: var(--weechy-text-muted); font-size: 14px;">Terms of Service</a>
+          <a href="/privacyPolicy.html" style="color: var(--weechy-text-muted); font-size: 14px;">Privacy Policy</a>
+          <a href="/openSource.html" style="color: var(--weechy-text-muted); font-size: 14px;">Open Source Licenses</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
